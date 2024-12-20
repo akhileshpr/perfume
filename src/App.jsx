@@ -11,29 +11,34 @@ import Community from './components/community';
 const App = () => {
   return (
     <>
-    <Box
-      sx={{
-        backgroundImage: `url(${image})`,
-        backgroundSize: 'cover',
-        backgroundPosition: 'center',
-        backgroundRepeat: 'no-repeat',
-        minHeight: '110vh', 
-      }}
-    >
+      <Box
+        sx={{
+          backgroundImage: `url(${image})`,
+          backgroundSize: {
+            xs: 'cover', 
+            sm: 'cover',   
+          },
+          backgroundPosition: 'center',
+          backgroundRepeat: 'no-repeat',
+          minHeight: {
+            xs: '100%', 
+            sm: '100vh', 
+            md: '110vh', 
+          },
+        }}
+      >
+        <Container>
+          <Navbar />
+          <Home />
+        </Container>
+      </Box>
       <Container>
-        <Navbar />
-        <Home />
+        <ProductCarousel />
+        <Middle />
+        <Community />
+        <Footer />
       </Container>
-    </Box>
-    <Container>
-
-   <ProductCarousel/>
-   <Middle/>
-   <Community/>
-   <Footer/>
-    </Container>
     </>
-
   );
 };
 

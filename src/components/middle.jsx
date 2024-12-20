@@ -31,8 +31,19 @@ const Middle = () => {
           }}
         >
           <Box>
-            <Typography variant="h3" gutterBottom>
-              DAR ALSMOW : It's not just a perfume it's a culture
+      <Typography
+        className="home"
+        variant="h3"
+        sx={{
+          marginTop: "8%",
+          fontSize: {
+            xs: "1.8rem", // Small screens
+            sm: "2.5rem", // Medium screens
+            md: "3rem", // Large screens
+            lg: "3.5rem", // Extra-large screens
+          },
+        }}
+      >              DAR ALSMOW : It's not just a perfume it's a culture
             </Typography>
             <Typography variant="body1" paragraph>
               Embracing sustainability and continuous learning, Local Face
@@ -68,8 +79,19 @@ const Middle = () => {
           }}
         >
           <Box>
-            <Typography variant="h3" gutterBottom>
-              DAR ALSMOW : It's not just a perfume it's a culture
+      <Typography
+        className="home"
+        variant="h3"
+        sx={{
+          marginTop: "8%",
+          fontSize: {
+            xs: "1.8rem", // Small screens
+            sm: "2.5rem", // Medium screens
+            md: "3rem", // Large screens
+            lg: "3.5rem", // Extra-large screens
+          },
+        }}
+      >              DAR ALSMOW : It's not just a perfume it's a culture
             </Typography>
             <Typography variant="body1" paragraph>
               Embracing sustainability and continuous learning, Local Face

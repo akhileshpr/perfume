@@ -52,9 +52,9 @@ const Navbar = () => {
             open={isDrawerOpen}
             onClose={() => setIsDrawerOpen(false)}
           >
-            <List sx={{ width: 250 }}>
+            <List sx={{ width: 250 ,backgroundColor:'black'}}>
               {navLinks.map((link, index) => (
-                <ListItem button key={index} onClick={() => setIsDrawerOpen(false)}>
+                <ListItem sx={{backgroundColor:'black'}} button key={index} onClick={() => setIsDrawerOpen(false)}>
                   <ListItemText primary={link} />
                 </ListItem>
               ))}

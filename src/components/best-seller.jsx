@@ -50,7 +50,18 @@ const ProductCarousel = () => {
 
   return (
     <Box sx={{ maxWidth: '90%', margin: 'auto', padding: '10px'}}>
-      <Typography p={4} variant="h3" align="center" gutterBottom color="#D4AF37">
+              <Typography
+                p={4} variant="h3" align="center" gutterBottom color="#D4AF37"
+                sx={{
+                  marginTop: "8%",
+                  fontSize: {
+                    xs: "1.8rem", // Small screens
+                    sm: "2.5rem", // Medium screens
+                    md: "3rem", // Large screens
+                    lg: "3.5rem", // Extra-large screens
+                  },
+                }}
+              >
         Dar Alsmow Bestseller
       </Typography>
       <Slider {...settings}>
